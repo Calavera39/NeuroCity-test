@@ -1,0 +1,24 @@
+.container {
+    width: 400px;
+    margin: auto;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    background-color: rgb(62, 57, 57);
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    color: rgb(227, 211, 211);;
+    padding: 10px 20px; 
+}
+
+p {
+    text-align: center;
+    visibility: hidden;
+}
+
+p.active {
+    visibility: visible;
+}

@@ -1,0 +1,56 @@
+.slider {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider__container {
+    display: flex;
+    transform: translate(0);
+    transition: transform .8s ease;
+    height: 400px;
+}
+
+.slider__controls {
+    color: white;
+    font-size: 5rem;
+   
+}
+
+.previous {
+    cursor: pointer;
+    left: 5%;
+}
+
+
+
+.next {
+    cursor: pointer;
+    right: 5%;
+}
+
+
+
+
+
+.previous, .next {
+    width: 40px;
+    opacity: .75;
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+}
+
+.previous:hover, .next:hover {
+    opacity: 1;
+}
+
+img {
+    width: 100%;
+}
+
+
+

@@ -1,0 +1,110 @@
+.container {
+    width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.circle {
+    width: 100px; 
+    height: 100px;
+    background: #85346d;
+    border-radius: 50%;
+}
+
+.circle.active {
+    animation: slide 3s ease-in-out infinite;
+}
+
+.triangle {
+    width: 0; 
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #24375B;
+
+}
+
+.triangle.active {
+    animation: rotate 3s ease-in-out infinite;
+}
+
+.square {
+    width: 100px;
+	height: 100px;
+	background: red;
+}
+
+.square.active {
+    animation: move 3s ease-in-out infinite;
+}
+
+.rectangle {
+    width: 200px;
+	height: 100px;
+	background: rgb(27, 156, 72);
+}
+
+.rectangle.active {
+    animation: color 3s ease-in-out infinite;
+}
+
+
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+
+
+@keyframes slide{
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes move {
+    0% {
+        margin-left: 0;
+    }
+
+    33% {
+        margin-left: 200px
+    }
+
+    66% {
+        margin-left: -200px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes color {
+    0% {
+        background: rgb(27, 156, 72);
+    }
+
+    33% {
+        background: rgb(91, 150, 112);
+    }
+
+    66% {
+        background: rgb(137, 139, 138);
+    }
+
+    100% {
+        background: rgb(27, 156, 72);
+    }
+}
